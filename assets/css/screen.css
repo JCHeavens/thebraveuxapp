@@ -1,0 +1,77 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* type */
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {font-size-adjust: 0.5;-webkit-font-smoothing:antialiased;color: #606c6c;}
+body {font-size: 100%;font-size: 1em;line-height: 1.40625;}
+
+/* default */
+*, *:before, *:after {-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing: grayscale;text-rendering: optimizeLegibility;}
+html, body, header, footer, main, nav, section, article, aside, div {margin:0;padding:0;position:relative;width:100%;height:100%;font-family:'roboto condensed',helvetica,arial,sans-serif;font-weight:400;color:#616a75;}
+header, main, nav, section, article, aside, div {height:auto;}
+h1, h2, h3, h4 {font-weight:400;color:#445963;}
+p {margin: 1.40625em 0;}
+blockquote {padding:0;margin:0;}
+blockquote p {font-style:italic;margin: 1.875em 0;padding-left: 1.40625em;line-height: 1.40625;}
+strong, em, a:link, a:hover, a:visited, span, li {font-family:inherit;font-size:inherit;font-weight:inherit;line-height: inherit;}
+a:link, a:hover, a:focus {text-decoration:none;}
+strong {font-weight:700;}
+em {font-style:italic;}
+ul, ol {list-style-type:disc;margin:0;}
+ol {list-style-type:decimal;}
+li {margin:0;}
+img, embed, object, video, iframe {max-width:100%;display:block;}
+hr {border: 0;height: 0.3125em;margin: 1.25em 0;background:#eeeeee;}
+::-moz-selection {background:#616a75;color:#ffffff;}
+::selection {background:#616a75;color:#ffffff;}
+
+
+body {background:#ffffff;height:100%;overflow-x: hidden;}
+nav ul, nav li {list-style-type:none;margin:0;padding:0;}
+
+/* menu */
+.wrapper {min-width: 100%;min-height: 100%;position: relative;top: 0;bottom: 100%;left: 0;z-index: 1;background:#e0e5e8;}
+.menu {background: #662d91;list-style:none;width:75%;height:100%;position:fixed;top: 0;left: 100%;z-index: 0;padding: 0;margin: 0;box-sizing:border-box;overflow-y: scroll;padding-top:3.125em;}
+.menu.open {left: 37.5%;box-shadow: -3px 0px 3px 0 rgba(0,0,0,0.25);z-index: 1;}
+a.menu-trigger {font-size:0.875em;position: fixed;top: 0;right: 0;cursor:pointer;line-height:3.57142857142857;color:#ffffff;padding: 0 1.42857142857143em 0 1.78571428571429em;background:#662d91;z-index:10;}
+a.menu-trigger:after {content:'';background:url('../images/menu.svg');background-size:contain;width: 0.875em;height: 0.75em;margin-top: 1.4em;margin-left:1.42857142857143em;float:right;display:block;}
+.menu li {line-height:3.125;padding:0 1.5625em;}
+.menu li.help, .menu li.about {background:#4d226d;}
+.menu a {font-size:0.875em;color:#ffffff;}
+.menu.open + a.menu-trigger {width:62.5%;}
+
+/* Couldn't get the a.menu-trigger to line up with the menu on transition, so I left it out... */
+
+
+/* header */
+
+.header {height:3.125em;padding:0 1.5625em;background:#93278f;position:fixed;top: 0;left: 0;z-index: 1;}
+.header h1 {font-size:0.875em;line-height:3.57142857142857;margin:0;color:#ffffff;}
+
+/* main */
+.main {padding: 5em 1.5625em 2.5em;background:#ebeef0;}
+.main img {width:2.5em;height:2.9583125em;}
+.main p {font-size:0.76375em;margin:2.04582651391162em 0;}
+.main h2 {font-size:1.125em;margin:0 0 1.38888888888889em;}
+.main p.help {display:inline-block;font-size:0.875em;position: absolute;bottom: 3.57142857142858em;right: 1.78571428571429em;margin: 0;}
+.main p.help a {color:#616a75;}
+
+/* form */
+form > div {clear: both;overflow: hidden;margin: 0 0 0.9375em 0;}
+form > div:last-of-type {margin-bottom:0;}
+input[type=text] {color:#616a75;font-size:0.875em;width: 100%;border-top: 1px solid #ffffff;border-left: 1px solid #ffffff;border-right: 1px solid #ffffff;border-bottom: 1px solid #ffffff;padding: 0.35714285714286em 0.71428571428571em;border-radius:0.21428571428571em;}
+input[type=text]:focus {outline: 0;border-color: #cccccc;}
+input[type="submit"] {font-size:0.875em;font-weight: 400;padding:0.71428571428571em 2.14285714285714em;text-decoration:none;color:#ffffff;background:#662d91;border: 1px solid #662d91;border-radius:0.21428571428571em;margin-top:0.35714285714286em;}
+form > div > label {display:none;} /* left the labels in for more semantic markup */
+::-webkit-input-placeholder {color: #778f9b;}
+:-moz-placeholder {color: #778f9b;}
+::-moz-placeholder {color: #778f9b;}
+:-ms-input-placeholder {color: #778f9b;}
+
+/* footer */
+.footer {padding:6.625em 1.5625em 1.5625em 1.5625em;position:absolute;bottom:0;left:0;height:9.375em;}
+.footer p {font-size:0.875em;color:#778f9b;margin:0;}
+
+
+
+
